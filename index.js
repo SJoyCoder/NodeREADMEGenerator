@@ -1,5 +1,7 @@
 // TODO: Include packages needed for this application
-let inquirer = require("inquirer");
+const inquirer = require("inquirer");
+const fs = require('fs');
+
 const { default: Choices } = require("inquirer/lib/objects/choices");
 // TODO: Create an array of questions for user input
 const questions = [
