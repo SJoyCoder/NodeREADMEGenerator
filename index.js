@@ -51,18 +51,30 @@ const questions = [
         name: "questions",
         message: "What are any questions?"
     }
-
+    
 ];
 
 // TODO: Create a function to write README file
-function writeToFile(fileName, data) {}
+function writeToFile(fileName, data) {
+    fs.writeFile(fileName, data, function(err){
+    })
+};
 
 // TODO: Create a function to initialize app
 function init() {
     console.log("hi");
-    inquirer.prompt(questions).then(function(boo){
-
-        console.table(boo);
+    inquirer.prompt(questions).then(function(answers){
+        
+        let readMeText = `# ${answers.title}
+        
+        ![Webpage GIF](./assets/Weather%20Dashboard.gif)
+        
+        [Click here to view deployed page](https://sjoycoder.github.io/Challenge6-WeatherDashboard/)
+        
+        ## About
+        `;
+        console.table(answers);
+        writeToFile("generatedREADME.md", readMeText)
     })
 }
 
