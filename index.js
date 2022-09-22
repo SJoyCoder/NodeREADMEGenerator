@@ -12,17 +12,27 @@ const questions = [
     },
     {
         type: "input",
+        name: "link",
+        message: "Enter the link to your page or repo."
+    },
+    {
+        type: "input",
+        name: "pic",
+        message: "Link gif or screenshot of your page or code here."
+    },
+    {
+        type: "input",
         name: "description",
         message: "What is a description of your Repo?"
     },
     {
         type: "input",
-        name: "table of contents",
-        message: "What is the Table of Contents for your Repo?"
+        name: "tableOfContents",
+        message: "Input the Table of Contents for your Repo."
     },
     {
         type: "input",
-        name: "instalation",
+        name: "installation",
         message: "What are the installation instructions for your Repo?"
     },
     {
@@ -65,13 +75,37 @@ function init() {
     console.log("hi");
     inquirer.prompt(questions).then(function(answers){
         
-        let readMeText = `# ${answers.title}
+let readMeText = `# ${answers.title}
         
-        ![Webpage GIF](./assets/Weather%20Dashboard.gif)
+${answers.link}
         
-        [Click here to view deployed page](https://sjoycoder.github.io/Challenge6-WeatherDashboard/)
+${answers.pic}
         
-        ## About
+## About
+${answers.description}
+
+## Table of Contents
+${answers.tableOfContents}
+
+## Installation Instructions
+${answers.installation}
+
+## Usage
+${answers.usage}
+
+## License
+${answers.license}
+
+## Contributing
+${answers.contributing}
+
+## Tests
+${answers.tests}
+
+## Questions
+${answers.questions}
+
+
         `;
         console.table(answers);
         writeToFile("generatedREADME.md", readMeText)

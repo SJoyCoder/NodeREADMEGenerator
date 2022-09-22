@@ -1,8 +1,32 @@
-# title
+# Title
         
-        ![Webpage GIF](./assets/Weather%20Dashboard.gif)
+Link
         
-        [Click here to view deployed page](https://sjoycoder.github.io/Challenge6-WeatherDashboard/)
+Pic
         
-        ## About
+## About
+Description
+
+## Table of Contents
+Table of Contents
+
+## Installation Instructions
+Installation Instructions
+
+## Usage
+Useage
+
+## License
+WTFPL
+
+## Contributing
+Me myself and I
+
+## Tests
+This
+
+## Questions
+Too many
+
+
         
