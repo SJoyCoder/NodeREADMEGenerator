@@ -22,13 +22,13 @@ const questions = [
     },
     {
         type: "input",
-        name: "description",
-        message: "What is a description of your Repo?"
+        name: "tableOfContents",
+        message: "Do you want a Table of Contents for your Repo?"
     },
     {
         type: "input",
-        name: "tableOfContents",
-        message: "Input the Table of Contents for your Repo."
+        name: "description",
+        message: "What is a description of your Repo?"
     },
     {
         type: "input",
@@ -58,8 +58,13 @@ const questions = [
     },
     {
         type: "input",
-        name: "github",
-        message: "Enter your GitHub profile name and link."
+        name: "githubP",
+        message: "Enter your GitHub profile name."
+    },
+    {
+        type: "input",
+        name: "githubL",
+        message: "Enter your Github profile link."
     },
     {
         type: "input",
@@ -87,17 +92,23 @@ function init() {
         
 let readMeText = `# ${answers.title}
         
-${answers.link}
+[Click here for deployed page](${answers.link})
         
-${answers.pic}
-        
+![Screenshot of page](${answers.pic})
+
+## Table of Contents
+1. [About](#about)
+2. [Installation Instructions](#installation)
+3. [Usage](#usage)
+4. [License](#license)
+5. [Contributing](#contributing)
+6. [Tests](#tests)
+7. [Questions](#questions)
+
 ## About
 ${answers.description}
 
-## Table of Contents
-${answers.tableOfContents}
-
-## Installation Instructions
+## Installation
 ${answers.installation}
 
 ## Usage
@@ -113,7 +124,7 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-${answers.github}
+[${answers.githubP}](${answers.githubL})
 
 ${answers.email}
 
