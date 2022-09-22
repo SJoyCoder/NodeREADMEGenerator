@@ -1,12 +1,14 @@
-# rtyhrtsf
+# Fun stuff
+
+[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)
         
-[Click here for deployed page](hsfd)
+[Click here for deployed page](Cool Places)
         
-![Screenshot of page](sgh)
+![Screenshot of page]()
 
 ## Table of Contents
 1. [About](#about)
-2. [Installation Instructions](#installation)
+2. [Installation](#installation)
 3. [Usage](#usage)
 4. [License](#license)
 5. [Contributing](#contributing)
@@ -14,29 +16,28 @@
 7. [Questions](#questions)
 
 ## About
-sdhgs
+Awesome Things
 
 ## Installation
-sfhgs
+Cool things
 
 ## Usage
-fgsh
+Make awesome stuff
 
 ## License
-MIT
+WTFPL
 
 ## Contributing
-gshsgf
+Be cool
 
 ## Tests
-sfgf
+none
 
 ## Questions
-[sgfh](sgh)
+- [SJoyCoder](Cool Place)
+- sjoymcginnis@gmail.com
 
-sh
-
-sfh
+Please don't
 
 
         

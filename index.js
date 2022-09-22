@@ -39,7 +39,7 @@ const questions = [
         type: "list",
         name: "license",
         message: "How is your Repo licensed?",
-        choices: ["MIT", "WTFPL", "GPL", "CC", "MPL"]
+        choices: ["MIT", "WTFPL", "GPL", "MPL"]
     },
     {
         type: "input",
@@ -85,7 +85,24 @@ function init() {
     console.log("hi");
     inquirer.prompt(questions).then(function(answers){
         
+        //getting badges on page
+        let output;
+        function renderLicenseBadge(){
+            let license = answers.license;
+            if(license === "MIT"){
+                output = "[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)";
+            }else if(license === "WTFPL"){
+                output = "[![License: WTFPL](https://img.shields.io/badge/License-WTFPL-brightgreen.svg)](http://www.wtfpl.net/about/)";
+            }else if(license === "GPL"){
+                output = "[![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](https://www.gnu.org/licenses/gpl-3.0)";
+            }else if(license === "MPL"){
+                output = "[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)";
+            }
+            return output;
+        }
 let readMeText = `# ${answers.title}
+
+${renderLicenseBadge()}
         
 [Click here for deployed page](${answers.link})
         
@@ -119,9 +136,8 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
-[${answers.githubP}](${answers.githubL})
-
-${answers.email}
+- [${answers.githubP}](${answers.githubL})
+- ${answers.email}
 
 ${answers.questions}
 
