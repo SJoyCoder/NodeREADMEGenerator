@@ -49,7 +49,7 @@ const questions = [
     {
         type: "input",
         name: "contributing",
-        message: "Who contributed to your Repo?"
+        message: "What are your contribution guidelines to your Repo?"
     },
     {
         type: "input",
@@ -58,8 +58,18 @@ const questions = [
     },
     {
         type: "input",
+        name: "github",
+        message: "Enter your GitHub profile name and link."
+    },
+    {
+        type: "input",
+        name: "email",
+        message: "Enter your email you would like to be contacted at."
+    },
+    {
+        type: "input",
         name: "questions",
-        message: "What are any questions?"
+        message: "Instructions for reaching you about questions for your repo?"
     }
     
 ];
@@ -103,6 +113,10 @@ ${answers.contributing}
 ${answers.tests}
 
 ## Questions
+${answers.github}
+
+${answers.email}
+
 ${answers.questions}
 
 
