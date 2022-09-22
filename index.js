@@ -22,11 +22,6 @@ const questions = [
     },
     {
         type: "input",
-        name: "tableOfContents",
-        message: "Do you want a Table of Contents for your Repo?"
-    },
-    {
-        type: "input",
         name: "description",
         message: "What is a description of your Repo?"
     },
@@ -98,7 +93,7 @@ let readMeText = `# ${answers.title}
 
 ## Table of Contents
 1. [About](#about)
-2. [Installation Instructions](#installation)
+2. [Installation](#installation)
 3. [Usage](#usage)
 4. [License](#license)
 5. [Contributing](#contributing)
