@@ -4,8 +4,8 @@
         
 [Click here for deployed page](https://github.com/SJoyCoder/NodeREADMEGenerator)
         
-![Screenshot of page](./NodeREADMEGenerator%20video.mp4)
-<iframe src="./NodeREADMEGenerator\ video.mp4">
+![Screenshot of page](./generatedREADME.gif)
+
 
 ## Table of Contents
 1. [About](#about)
@@ -17,13 +17,13 @@
 7. [Questions](#questions)
 
 ## About
-Builds a professional README by answering questions in the Termial. 
+Builds a professional README by answering questions in the Termial. You will be prompted to answer questions to fill out your README. This will save time in formatting.
 
 ## Installation
-None
+`npm i`
 
 ## Usage
-To create a README
+To create a professional README in a short amount of time.
 
 ## License
 WTFPL
@@ -38,5 +38,4 @@ None
 - [SJoyCoder](https://github.com/SJoyCoder)
 - sjoymcginnis@gmail.com
 
-Don't
         
